@@ -19,7 +19,7 @@ const schema = makeExecutableSchema({
 ### `increment`/`decrement`
 ```gql
 type Query {
-  page: Int! @stateful(default: 1, actions: ["increment", "decrement"])
+  page: Int! @stateful(default: 1, actions: [INCREMENT, DECREMENT])
 }
 
 # GENERATED
@@ -32,7 +32,7 @@ type Mutation {
 ### `toggle`
 ```gql
 type Query {
-  visible: Boolean! @stateful(default: false, actions: ["toggle"])
+  visible: Boolean! @stateful(default: false, actions: [TOGGLE])
 }
 
 # GENERATED
@@ -44,7 +44,7 @@ type Mutation {
 ### `set`
 ```gql
 type Query {
-  name: String @stateful(actions: ["set"])
+  name: String @stateful(actions: [SET])
 }
 
 # GENERATED
@@ -56,7 +56,7 @@ type Mutation {
 ### custom actions
 ```gql
 type Query {
-  sign: String @stateful(actions: ["invert"])
+  sign: String @stateful(actions: [INVERT])
 }
 
 # GENERATED
