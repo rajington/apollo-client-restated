@@ -1,3 +1,5 @@
+> This project practices [README-driven development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+
 # apollo-client-restated
 Add common functionality to [Apollo local state](https://www.apollographql.com/docs/react/essentials/local-state) via clientside [schema directives](https://www.apollographql.com/docs/graphql-tools/schema-directives).
 
